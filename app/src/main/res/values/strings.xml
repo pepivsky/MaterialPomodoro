@@ -4,4 +4,8 @@
     <string name="btnRestart">reiniciar</string>
     <string name="normal_channel_id">normal channel</string>
     <string name="normal_channel_name">notificación normal</string>
+
+    <string name="menu_acerca_de">Acerca de</string>
+    <string name="menu_info_pomodoro">Aprende sobre el método Pomodoro</string>
+
 </resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mAbout"
+        android:title="@string/menu_acerca_de"></item>
+
+    <item
+        android:id="@+id/mInfoPomodoro"
+        android:title="@string/menu_info_pomodoro"
+        ></item>
+</menu>
