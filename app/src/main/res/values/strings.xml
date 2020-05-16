@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MaterialPomodoro</string>
+    <string name="btnStart">Iniciar</string>
+    <string name="btnRestart">reiniciar</string>
+    <string name="normal_channel_id">normal channel</string>
+    <string name="normal_channel_name">notificación normal</string>
+</resources>
