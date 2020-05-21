@@ -3,10 +3,13 @@
 
     <item
         android:id="@+id/mAbout"
-        android:title="@string/menu_acerca_de"></item>
+        android:title="@string/menu_acerca_de"
+        android:orderInCategory="2"
+        ></item>
 
     <item
         android:id="@+id/mInfoPomodoro"
         android:title="@string/menu_info_pomodoro"
+        android:orderInCategory="1"
         ></item>
 </menu>

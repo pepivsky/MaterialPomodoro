@@ -13,6 +13,8 @@ import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -70,6 +72,30 @@ public class MainActivity extends AppCompatActivity {
 
         updateCountDownText();
     }
+//Método para el menú de opciones
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        //return super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.menu_opciones, menu);
+        return true;
+    }
+
+//Acciones al pulsar el menú
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.mAbout:
+                Intent intent = new Intent(this, ActivityAcercaDe.class);
+                startActivity(intent);
+                break;
+
+            case R.id.mInfoPomodoro:
+                Intent intent1 = new Intent(this, ActivityInfoPomodoro.class);
+                startActivity(intent1);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     private void startTimer() {
         mCountDownTimer = new CountDownTimer(mTimeLeftInMillis, 1000) {
@@ -101,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
                         .setAutoCancel(true)
                         .setColor(16711680)
                         .setContentText("Lo haces muy bien!, ahora tómate un descanso de 5 minutos y haz algo divertido, después puedes continuar trabajando ;).")
-                        .setStyle(new Notification.BigTextStyle().bigText("Lo haces muy bien!, ahora tómate un descanso de 5 minutos y haz algo divertido, después puedes continuar trabajando ;)."))
+                        .setStyle(new Notification.BigTextStyle().bigText("Lo haces muy bien!, ahora tómate un descanso de 5 minutos y haz algo divertido, después puedes continuar trabajando."))
                         ;
 
                 NotificationManager notificationManager = (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
